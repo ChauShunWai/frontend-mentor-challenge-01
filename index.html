@@ -18,14 +18,28 @@
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="tailwind.config.js"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            tomato: "hsl(4, 100%, 67%)",
+                            "dark-slate-grey": "hsl(234, 29%, 20%)",
+                            "charcoal-grey": "hsl(235, 18%, 26%)",
+                            grey: "hsl(231, 7%, 60%)",
+                            white: "hsl(0, 0%, 100%)",
+                        },
+                    },
+                },
+            };
+        </script>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <!-- Sign-up form start -->
 
         <header>
-            <p class="text-5xl text-clifford">Stay updated!</p>
+            <p class="text-5xl text-dark-slate-grey">Stay updated!</p>
         </header>
 
         Join 60,000+ product managers receiving monthly updates on: Product
@@ -53,4 +67,3 @@
         </div>
     </body>
 </html>
-
