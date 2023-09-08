@@ -36,7 +36,7 @@
         <style type="text/tailwindcss">
             @layer components {
                 .benefits {
-                    @apply my-3 last:my-0 first:my-0 before:content-[''] before:inline-block before:h-6 before:w-6 before:bg-[url('assets/images/icon-success.svg')] before:bg-cover before:mr-4 before:align-middle;
+                    @apply flex my-3 last:my-0 first:my-0 before:content-[''] before:inline-block before:basis-6 before:shrink-0 before:h-6 before:bg-[url('assets/images/icon-success.svg')] before:bg-cover before:mr-4;
                 }
             }
         </style>
@@ -54,7 +54,7 @@
         </div>
 
         <ul class="list-inside">
-            <li class="benefits whitespace-nowrap break-l">
+            <li class="benefits">
                 Product discovery and building what matters
             </li>
             <li class="benefits">Measuring to ensure updates are a success</li>
