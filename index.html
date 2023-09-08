@@ -33,19 +33,35 @@
                 },
             };
         </script>
+        <style type="text/tailwindcss">
+            @layer components {
+                .benefits {
+                    @apply my-3 last:my-0 first:my-0 before:content-[''] before:inline-block before:h-6 before:w-6 before:bg-[url('assets/images/icon-success.svg')] before:bg-cover before:mr-4 before:align-middle;
+                }
+            }
+        </style>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <!-- Sign-up form start -->
 
         <header>
-            <p class="text-5xl text-dark-slate-grey">Stay updated!</p>
+            <p class="text-5xl text-dark-slate-grey font-bold">Stay updated!</p>
         </header>
 
-        Join 60,000+ product managers receiving monthly updates on: Product
-        discovery and building what matters Measuring to ensure updates are a
-        success And much more! Email address email@company.com Subscribe to
-        monthly newsletter
+        <div class="text-dark-slate-grey py-4">
+            Join 60,000+ product managers receiving monthly updates on:
+        </div>
+
+        <ul class="list-inside">
+            <li class="benefits whitespace-nowrap break-l">
+                Product discovery and building what matters
+            </li>
+            <li class="benefits">Measuring to ensure updates are a success</li>
+            <li class="benefits">And much more!</li>
+        </ul>
+
+        Email address email@company.com Subscribe to monthly newsletter
 
         <!-- Sign-up form end -->
 
