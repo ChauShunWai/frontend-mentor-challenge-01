@@ -17,13 +17,11 @@ function init() {
     const errorMsg = document.querySelector(".error-msg");
 
     function showErrorMsg() {
-        errorMsg.classList.add("visible");
-        errorMsg.classList.remove("invisible");
+        errorMsg.classList.replace("invisible", "visible");
     }
 
     function hideErrorMsg() {
-        errorMsg.classList.remove("visible");
-        errorMsg.classList.add("invisible");
+        errorMsg.classList.replace("visible", "invisible");
     }
 
     subscribeBtn.addEventListener("click", function () {
