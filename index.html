@@ -44,8 +44,12 @@
                 @apply text-dark-slate-grey bg-dark-slate-grey px-10 mt-8;
             }
 
+            .field--default {
+                @apply border-opacity-25 border-grey text-dark-slate-grey bg-transparent;
+            }
+
             .field--error {
-                @apply visible;
+                @apply border-opacity-100 border-red-400 text-red-400 bg-red-100;
             }
 
             @layer components {
@@ -96,7 +100,7 @@
                     type="email"
                     id="email"
                     placeholder="email@company.com"
-                    class="block w-full border-grey border-2 placeholder:text-grey rounded-lg h-16 px-7 border-opacity-25"
+                    class="block w-full border-2 placeholder:text-grey rounded-lg h-16 px-7"
                 />
                 <button
                     id="subscribe-btn"
