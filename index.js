@@ -18,14 +18,12 @@ function init() {
 
     function showErrorMsg() {
         errorMsg.classList.replace("invisible", "visible");
-        emailField.classList.remove("field--default");
-        emailField.classList.add("field--error");
+        emailField.classList.replace("field--default", "field--error");
     }
 
     function hideErrorMsg() {
         errorMsg.classList.replace("visible", "invisible");
-        emailField.classList.remove("field--error");
-        emailField.classList.add("field--default");
+        emailField.classList.replace("field--error", "field--default");
     }
 
     subscribeBtn.addEventListener("click", function () {
