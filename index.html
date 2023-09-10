@@ -131,28 +131,32 @@
         <!-- Sign-up form end -->
 
         <dialog
-            class="px-12 pt-10 pb-14 bg-white rounded-3xl max-w-[480px] text-dark-slate-grey backdrop:bg-[rgba(0,0,0,0.85)]"
+            class="h-full min-h-screen w-full max-w-full px-6 py-10 bg-white text-dark-slate-grey backdrop:bg-[rgba(0,0,0,0.85)] md:rounded-3xl md:max-w-[480px] md:px-12 md:pt-10 md:pb-14 md:h-fit md:min-h-0"
         >
-            <form action="">
+            <form action="" class="h-full flex flex-col justify-between">
                 <!-- Success message start -->
-                <img
-                    src="assets/images/icon-success.svg"
-                    alt="tick icon"
-                    class="block w-16 h-16"
-                />
-                <header class="tracking-tight text-6xl font-bold mt-6 mb-8">
-                    Thanks for subscribing!
-                </header>
-                <p>
-                    A confirmation email has been sent to
-                    <span class="subscribed-email font-bold"></span>. Please
-                    open it and click the button inside to confirm your
-                    subscription.
-                </p>
+                <div>
+                    <img
+                        src="assets/images/icon-success.svg"
+                        alt="tick icon"
+                        class="block w-12 h-12 md:w-16 md:h-16"
+                    />
+                    <header
+                        class="tracking-tight text-4xl font-bold mt-6 mb-8 md:text-6xl"
+                    >
+                        Thanks for subscribing!
+                    </header>
+                    <p class="tracking-tighter md:tracking-normal">
+                        A confirmation email has been sent to
+                        <span class="subscribed-email font-bold"></span>. Please
+                        open it and click the button inside to confirm your
+                        subscription.
+                    </p>
+                </div>
                 <button
                     value="cancel"
                     formmethod="dialog"
-                    class="w-full font-bold tracking-tight bg-dark-slate-grey text-white h-16 rounded-lg block mt-12 hover:cursor-pointer bg-gradient-to-r hover:from-[#ff527b] hover:to-[#ff6a3a] transition-shadow duration-75 ease-in shadow-sm hover:shadow-xl hover:shadow-[#ff527b]/40"
+                    class="shrink-0 w-full font-bold tracking-tight bg-dark-slate-grey text-white h-16 rounded-lg block mt-12 hover:cursor-pointer bg-gradient-to-r hover:from-[#ff527b] hover:to-[#ff6a3a] transition-shadow duration-75 ease-in shadow-sm hover:shadow-xl hover:shadow-[#ff527b]/40"
                 >
                     Dismiss message
                 </button>
