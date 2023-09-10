@@ -41,7 +41,7 @@
         </script>
         <style type="text/tailwindcss">
             body {
-                @apply text-dark-slate-grey bg-dark-slate-grey px-10 mt-8;
+                @apply text-dark-slate-grey bg-dark-slate-grey md:px-10 md:mt-8;
             }
 
             .field--default {
@@ -54,7 +54,7 @@
 
             @layer components {
                 .benefits {
-                    @apply flex my-3 last:my-0 first:my-0 before:content-[''] before:inline-block before:basis-6 before:shrink-0 before:h-6 before:bg-[url('assets/images/icon-success.svg')] before:bg-cover before:mr-4;
+                    @apply flex mt-2 first:mt-0 leading-5 before:mr-3 before:basis-5 before:h-5 before:content-[''] before:inline-block before:shrink-0 before:bg-[url('assets/images/icon-success.svg')] before:bg-cover md:before:mr-4 md:before:basis-6 md:before:h-6 md:mt-3 md:leading-6;
                 }
             }
         </style>
@@ -64,15 +64,17 @@
         <!-- Sign-up form start -->
 
         <div
-            class="grid grid-cols-2 items-center gap-12 pl-12 pr-6 py-8 container mx-auto bg-white rounded-3xl mb-20"
+            class="mb-6 bg-white flex flex-col-reverse md:grid md:grid-cols-2 md:items-center md:gap-12 md:pl-12 md:pr-6 md:py-8 md:container md:mx-auto md:rounded-3xl md:mb-20"
         >
-            <div class="">
+            <div class="px-6 py-10 md:px-0 md:py-0">
                 <header>
-                    <p class="tracking-tight text-6xl font-bold">
+                    <p class="tracking-tight text-4xl font-bold md:text-6xl">
                         Stay updated!
                     </p>
                 </header>
-                <div class="py-6 tracking-tighter text-lg">
+                <div
+                    class="py-4 leading-5 tracking-tighter md:text-lg md:py-6 md:leading-6"
+                >
                     Join 60,000+ product managers receiving monthly updates on:
                 </div>
                 <ul class="list-inside">
@@ -87,7 +89,7 @@
 
                 <label
                     for="email"
-                    class="text-sm font-bold mt-10 mb-3 flex justify-between"
+                    class="text-sm font-bold mt-10 mb-2 flex justify-between md:mb-3"
                 >
                     Email address
                     <p
@@ -110,11 +112,21 @@
                 </button>
             </div>
 
-            <img
-                class="w-full"
-                src="assets/images/illustration-sign-up-desktop.svg"
-                alt=""
-            />
+            <picture>
+                <source
+                    media="(max-width: 767px)"
+                    srcset="assets/images/illustration-sign-up-mobile.svg"
+                />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="assets/images/illustration-sign-up-desktop.svg"
+                />
+                <img
+                    class="w-full max-w-md mx-auto"
+                    src="assets/images/illustration-sign-up-mobile.svg"
+                    alt="illustration of signing up for performance boost"
+                />
+            </picture>
         </div>
         <!-- Sign-up form end -->
 
