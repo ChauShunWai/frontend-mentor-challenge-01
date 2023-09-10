@@ -41,7 +41,7 @@
         </script>
         <style type="text/tailwindcss">
             body {
-                @apply text-dark-slate-grey bg-dark-slate-grey md:px-10 md:mt-8;
+                @apply text-dark-slate-grey bg-dark-slate-grey grid place-items-center h-screen;
             }
 
             .field--default {
@@ -64,7 +64,7 @@
         <!-- Sign-up form start -->
 
         <div
-            class="mb-6 bg-white flex flex-col-reverse md:grid md:grid-cols-2 md:items-center md:gap-12 md:pl-12 md:pr-6 md:py-8 md:container md:mx-auto md:rounded-3xl md:mb-20"
+            class="bg-white flex flex-col-reverse md:grid md:grid-cols-2 md:items-center md:gap-12 md:pl-12 md:pr-6 md:py-8 md:container md:mx-auto md:rounded-3xl"
         >
             <div class="px-6 py-10 md:px-0 md:py-0">
                 <header>
@@ -159,7 +159,7 @@
             </form>
         </dialog>
 
-        <div class="attribution text-grey">
+        <div class="attribution text-grey fixed bottom-6">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
